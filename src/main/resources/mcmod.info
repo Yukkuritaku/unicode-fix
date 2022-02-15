@@ -1,0 +1,19 @@
+[
+  {
+    "modinfoversion": 2,
+    "modid": "unicodefix",
+    "name": "Unicode Fix",
+    "description": "Fixing Unicode Font Issues.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Yukkuritaku"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
