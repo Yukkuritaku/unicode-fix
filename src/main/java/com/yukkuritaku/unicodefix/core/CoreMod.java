@@ -10,7 +10,7 @@ import javax.annotation.Nullable;
 import java.util.Map;
 
 @IFMLLoadingPlugin.MCVersion("1.12.2")
-@IFMLLoadingPlugin.Name(UnicodeFixMod.NAME)
+@IFMLLoadingPlugin.Name(UnicodeFixMod.MOD_ID)
 public class CoreMod implements IFMLLoadingPlugin {
 
     @Override
