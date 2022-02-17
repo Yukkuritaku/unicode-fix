@@ -1,14 +1,14 @@
 package com.yukkuritaku.unicodefix.core;
 
 import com.yukkuritaku.unicodefix.UnicodeFixMod;
-import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 import org.spongepowered.asm.launch.MixinBootstrap;
 import org.spongepowered.asm.mixin.MixinEnvironment;
 import org.spongepowered.asm.mixin.Mixins;
 
 import java.util.Map;
 
-@IFMLLoadingPlugin.MCVersion("1.8.9")
+@IFMLLoadingPlugin.MCVersion("1.7.10")
 @IFMLLoadingPlugin.Name(UnicodeFixMod.MOD_ID)
 public class CoreMod implements IFMLLoadingPlugin {
 

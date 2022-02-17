@@ -1,29 +1,27 @@
 buildscript {
     repositories {
+        mavenCentral()
         maven { url "https://maven.minecraftforge.net" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://repo.spongepowered.org/maven" }
     }
     dependencies {
-        classpath "net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT"
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
         classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
     }
 }
 
-apply plugin: "net.minecraftforge.gradle.forge"
-apply plugin: 'org.spongepowered.mixin'
+apply plugin: "forge"
 
 version = "1.0"
-group = "com.yukkuritaku.unicodefix" //http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "com.yukkuritaku.unicodefix" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "unicodefix"
 
-sourceCompatibility = targetCompatibility = 1.8 //using java 8
-
 minecraft {
-    version = "1.8.9-11.15.1.2318-1.8.9"
-    runDir = "run"
-    mappings = "stable_22"
-    makeObfSourceJar = false //disable creation of sources jar
-    clientJvmArgs = ["-Dfml.coreMods.load=${rootProject.mod_group}.core.CoreMod", "-Dmixin.debug=true"]
+    version = "1.7.10-10.13.4.1614-1.7.10"
+    runDir = "eclipse"
+    mappings = "stable_12"
+    //clientJvmArgs = ["-Dfml.coreMods.load=${rootProject.mod_group}.core.CoreMod", "-Dmixin.debug=true"]
 }
 
 configurations {
@@ -36,6 +34,18 @@ repositories {
 }
 
 dependencies {
+    // you may put jars on which you depend on in ./libs
+    // or you may define them like so..
+    //compile "some.group:artifact:version:classifier"
+    //compile "some.group:artifact:version"
+
+    // real examples
+    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+
+    // for more info...
+    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+    // http://www.gradle.org/docs/current/userguide/dependency_management.html
     shade("org.spongepowered:mixin:0.6.4-SNAPSHOT") {
         exclude module: 'gson'
         exclude module: 'guava'
@@ -48,26 +58,36 @@ dependencies {
     }
 }
 
+def refMap = "${tasks.processResources.destinationDir}" + File.separator + "mixin.refmap.json"
+def mixinSrg = "${tasks.reobf.temporaryDir}" + File.separator + "mixins.srg"
+
+afterEvaluate {
+    tasks.compileJava.options.compilerArgs += ["-AreobfSrgFile=${tasks.reobf.srg}", "-AoutSrgFile=${mixinSrg}", "-AoutRefMapFile=${refMap}"]
+}
+
+reobf {
+    addExtraSrgFile mixinSrg
+}
+
 processResources {
-    //this will ensure that this task is redone when the versions change.
+    // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
-    //replace stuff in mcmod.info, nothing else
+    // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
-        include "mcmod.info"
+        include 'mcmod.info'
 
-        //replace version and mcversion
-        expand "version":project.version, "mcversion":project.minecraft.version
+        // replace version and mcversion
+        expand 'version': project.version, 'mcversion': project.minecraft.version
     }
 
-    //copy everything else, that"s not the mcmod.info
+    // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
-        exclude "mcmod.info"
+        exclude 'mcmod.info'
     }
 }
 
-// Example for how to get properties into the manifest for reading by the runtime..
 jar {
     from {
         configurations.shade.collect { it.isDirectory() ? it : zipTree(it) }
@@ -75,7 +95,7 @@ jar {
         exclude "LICENSE.txt", "META-INF/MANIFSET.MF", "META-INF/maven/**", "META-INF/*.RSA", "META-INF/*.SF"
     }
     manifest.attributes([
-            "Specification-Title"        : "examplemod",
+            "Specification-Title"        : "unicodefix",
             "Specification-Vendor"       : "examplemodsareus",
             "Specification-Version"      : "1", // We are version 1 of ourselves
             "Implementation-Title"       : project.name,
@@ -90,5 +110,5 @@ jar {
             'FMLCorePluginContainsFMLMod': true,
             'ModSide'                    : 'CLIENT'
     ])
-    classifier "1.8.9"
+    classifier "1.7.10"
 }
