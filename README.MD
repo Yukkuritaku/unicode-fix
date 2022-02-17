@@ -19,4 +19,4 @@
 
 ### ライセンス、Dependencyなど
 このプロジェクトはSpongePoweredの[Mixin](https://github.com/SpongePowered/Mixin)を依存関係で使用しており、MITライセンスの条件下で配布しています。
-ライセンスの詳細はこちら: [日本語](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE_JP.txt), [English](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE_EN.txt)
+ライセンスの詳細はこちら: [日本語](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE_JP.txt), [English](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE.txt)
