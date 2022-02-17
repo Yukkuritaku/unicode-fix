@@ -2,7 +2,6 @@ package com.yukkuritaku.unicodefix;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,12 +20,12 @@ public class UnicodeFixMod {
 
     private static Logger logger = LogManager.getLogger();
 
+    public static Logger getLogger() {
+        return logger;
+    }
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-    }
-
-    public static Logger getLogger() {
-        return logger;
     }
 }

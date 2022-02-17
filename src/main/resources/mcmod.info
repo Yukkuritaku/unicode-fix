@@ -2,7 +2,7 @@
   {
     "modid": "unicodefix",
     "name": "Unicode Fix",
-    "description": "Fixing Unicode Font Issues.",
+    "description": "Fixing Unicode Font Bug Issues.",
     "logoFile": "",
     "url": "https://github.com/Yukkuritaku/unicode-fix",
     "updateUrl": "https://github.com/Yukkuritaku/unicode-fix/releases",
