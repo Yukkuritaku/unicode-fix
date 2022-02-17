@@ -1,6 +1,5 @@
 ## Unicode Fix
 
----
 ###概要
 
 1.12.2以下の環境で「Unicodeフォントを使用する」をオフにしていても、
@@ -17,6 +16,7 @@
 4. 完了！
 
 ---
+
 ###ライセンス、Dependencyなど
 このプロジェクトはSpongePoweredの[Mixin](https://github.com/SpongePowered/Mixin)を依存関係で使用しています。
 
