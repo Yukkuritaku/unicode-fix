@@ -10,22 +10,20 @@ import org.apache.logging.log4j.Logger;
         name = UnicodeFixMod.NAME,
         version = UnicodeFixMod.VERSION,
         clientSideOnly = true,
-        acceptedMinecraftVersions = "[1.12.2]"
-)
+        acceptedMinecraftVersions = "[1.8.9]")
 public class UnicodeFixMod {
 
     public static final String MOD_ID = "unicodefix";
-    public static final String NAME = "Unicode Fix";
     public static final String VERSION = "1.0";
-
+    public static final String NAME = "Unicode Fix";
     private static Logger logger = LogManager.getLogger();
 
     public static Logger getLogger() {
         return logger;
     }
-
+    
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
+    public void init(FMLPreInitializationEvent event) {
         logger = event.getModLog();
     }
 }

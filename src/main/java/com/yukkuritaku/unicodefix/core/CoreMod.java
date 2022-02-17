@@ -6,10 +6,9 @@ import org.spongepowered.asm.launch.MixinBootstrap;
 import org.spongepowered.asm.mixin.MixinEnvironment;
 import org.spongepowered.asm.mixin.Mixins;
 
-import javax.annotation.Nullable;
 import java.util.Map;
 
-@IFMLLoadingPlugin.MCVersion("1.12.2")
+@IFMLLoadingPlugin.MCVersion("1.8.9")
 @IFMLLoadingPlugin.Name(UnicodeFixMod.MOD_ID)
 public class CoreMod implements IFMLLoadingPlugin {
 
@@ -23,7 +22,6 @@ public class CoreMod implements IFMLLoadingPlugin {
         return null;
     }
 
-    @Nullable
     @Override
     public String getSetupClass() {
         return null;

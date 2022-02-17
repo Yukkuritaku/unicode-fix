@@ -1,6 +1,6 @@
 {
   "required": true,
-  "minVersion": "0.8",
+  "minVersion": "0.6",
   "compatibilityLevel": "JAVA_8",
   "package": "com.yukkuritaku.unicodefix.mixin",
   "mixins": [],
