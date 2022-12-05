@@ -1,18 +1,22 @@
 package com.yukkuritaku.unicodefix.mixin;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.Locale;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Locale.class)
 public class LocaleMixin {
 
-    @Shadow private boolean unicode;
+    @Redirect(method = "loadLocaleDataFiles", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/resources/Locale;checkUnicode()V"))
+    private void onLoadLocaleDataFiles(Locale instance){}
 
-    @Redirect(method = "checkUnicode", at = @At(value = "FIELD", target = "Lnet/minecraft/client/resources/Locale;unicode:Z", ordinal = 1))
-    private void injectUnicode(Locale instance, boolean value){
-        this.unicode = false;
+    @Inject(method = "isUnicode", at = @At("RETURN"), cancellable = true)
+    private void onReturnIsUnicode(CallbackInfoReturnable<Boolean> cir){
+        cir.setReturnValue(Minecraft.getMinecraft().gameSettings.forceUnicodeFont);
     }
+
 }

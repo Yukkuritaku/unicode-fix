@@ -5,8 +5,12 @@
   "package": "com.yukkuritaku.unicodefix.mixin",
   "mixins": [],
   "client": [
+    "GameSettingsMixin",
+    "GuiLanguageAccessor",
+    "GuiLanguageMixin",
+    "LanguageManagerMixin",
     "LocaleMixin",
-    "MinecraftMixin"
+    "ScaledResolutionMixin"
   ],
   "server": [],
   "injectors": {

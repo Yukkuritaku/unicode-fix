@@ -12,9 +12,9 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: 'org.spongepowered.mixin'
 
-version = "1.0"
-group = "com.yukkuritaku.unicodefix" //http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "unicodefix"
+version = rootProject.mod_version
+group = rootProject.mod_group //http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = rootProject.mod_name
 
 sourceCompatibility = targetCompatibility = 1.8 //using java 8
 
