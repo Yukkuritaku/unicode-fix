@@ -1,6 +1,6 @@
 [
   {
-    "modid": "unicodefix",
+    "modid": "${modid}",
     "name": "Unicode Fix",
     "description": "Fixing Unicode Font Bug Issues.",
     "logoFile": "",
