@@ -98,7 +98,6 @@ tasks.withType(Jar::class) {
         "ForceLoadAsMod" to "true",
         "FMLCorePluginContainsFMLMod" to "true",
         "ModSide" to "CLIENT",
-        "FMLAT" to "${modid}_at.cfg",
         //"TweakClass" to "org.spongepowered.asm.launch.MixinTweaker",
         //"MixinConfigs" to "$modid.mixins.json"
     ))
