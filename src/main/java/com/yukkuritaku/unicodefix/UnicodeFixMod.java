@@ -16,16 +16,5 @@ public class UnicodeFixMod {
 
     public static final String MOD_ID = "unicodefix";
     public static final String NAME = "Unicode Fix";
-    public static final String VERSION = "1.0";
-
-    private static Logger logger = LogManager.getLogger();
-
-    public static Logger getLogger() {
-        return logger;
-    }
-
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-        logger = event.getModLog();
-    }
+    public static final String VERSION = "1.3";
 }
