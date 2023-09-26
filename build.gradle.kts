@@ -86,23 +86,25 @@ tasks.withType(JavaCompile::class) {
 
 tasks.withType(Jar::class) {
     archiveBaseName.set(modid)
-    manifest.attributes(mapOf(
-        "Specification-Title" to project.name,
-        "Specification-Vendor" to "Yukkuritaku",
-        "Specification-Version" to version,
-        "Implementation-Title" to project.name,
-        "Implementation-Version" to version,
-        "Implementation-Vendor" to "Yukkuritaku",
-        "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date()),
+    manifest.attributes(
+        mapOf(
+            "Specification-Title" to project.name,
+            "Specification-Vendor" to "Yukkuritaku",
+            "Specification-Version" to version,
+            "Implementation-Title" to project.name,
+            "Implementation-Version" to version,
+            "Implementation-Vendor" to "Yukkuritaku",
+            "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date()),
 
-        "FMLCorePlugin" to "$baseGroup.tweaker.UnicodeFixLoadingPlugin",
-        "ForceLoadAsMod" to true,
-        "FMLCorePluginContainsFMLMod" to true,
-        "ModSide" to "CLIENT",
-        // If you don't want mixins, remove these lines
-        /*"TweakClass" to "org.spongepowered.asm.launch.MixinTweaker",
-        "MixinConfigs" to "$modid.mixins.json"*/
-    ))
+            "FMLCorePlugin" to "$baseGroup.tweaker.UnicodeFixLoadingPlugin",
+            "ForceLoadAsMod" to true,
+            "FMLCorePluginContainsFMLMod" to true,
+            "ModSide" to "CLIENT",
+            // If you don't want mixins, remove these lines
+            /*"TweakClass" to "org.spongepowered.asm.launch.MixinTweaker",
+            "MixinConfigs" to "$modid.mixins.json"*/
+        )
+    )
 }
 
 tasks.processResources {

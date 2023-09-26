@@ -1,14 +1,14 @@
 [
   {
-    "modid": "unicodefix",
+    "modid": "${modid}",
     "name": "Unicode Fix",
     "description": "Fixing Unicode Font Bug Issues.",
     "logoFile": "",
     "url": "https://github.com/Yukkuritaku/unicode-fix",
     "updateUrl": "https://github.com/Yukkuritaku/unicode-fix/releases",
     "authorList": ["Yukkuritaku"],
-    "version": "1.0",
-    "mcversion": "1.12.2",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
     "credits": "Thanks to SpongePowered(Mixin)"
   }
 ]
