@@ -5,7 +5,8 @@
 1.12.2以下の環境で「Unicodeフォントを使用する」をオフにしていても、
 強制的にUnicodeフォントを使用してしまうバグを直すModです。
 
-対応しているバージョン: 1.12.2, 1.8.9, 1.7.10 <p>
+対応しているバージョン: 1.12.2, 1.8.9, 1.7.10
+
 1.13.x以上の環境では修正されているので作っていません。
 
 ### 導入方法
@@ -18,5 +19,5 @@
 ---
 
 ### ライセンス、Dependencyなど
-このプロジェクトはSpongePoweredの[Mixin](https://github.com/SpongePowered/Mixin)を依存関係で使用しており、MITライセンスの条件下で配布しています。
+このプロジェクトのv1.0でリリースしているファイルにはSpongePoweredの[Mixin](https://github.com/SpongePowered/Mixin)を依存関係で使用しており、MITライセンスの条件下で配布しています。
 MITライセンスの詳細はこちら: [日本語](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE_JP.txt), [English](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE.txt)
