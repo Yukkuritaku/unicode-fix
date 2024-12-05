@@ -6,6 +6,7 @@ import java.util.Map;
 
 @IFMLLoadingPlugin.MCVersion("1.7.10")
 public class UnicodeFixLoadingPlugin implements IFMLLoadingPlugin {
+
     @Override
     public String[] getASMTransformerClass() {
         return new String[]{UnicodeFixTransformer.class.getName()};

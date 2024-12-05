@@ -30,7 +30,7 @@ public class UnicodeFixTransformer implements IClassTransformer {
         registerTransformer(new LanguageManagerTransformer());
         registerTransformer(new GuiLanguage$ListTransformer());
         registerTransformer(new ScaledResolutionTransformer());
-        registerTransformer(new FontRendererTransformer());
+        //registerTransformer(new FontRendererTransformer());
     }
 
     private void registerTransformer(ITransformer transformer){
@@ -74,8 +74,7 @@ public class UnicodeFixTransformer implements IClassTransformer {
         try{
             node.accept(writer);
         }catch (Exception e){
-            LOGGER.error("An exception occurred while transforming {}", transformedName);
-            e.printStackTrace();
+            LOGGER.error("An exception occurred while transforming {}", transformedName, e);
             outputBytecode(transformedName, writer);
             return basicClass;
         }
