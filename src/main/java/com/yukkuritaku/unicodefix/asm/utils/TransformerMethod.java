@@ -43,6 +43,10 @@ public enum TransformerMethod {
 
     //GuiLanguage$List
     elementClicked("elementClicked", "func_148144_a", "a", "(IZII)V"),
+
+    // compatibilities:
+    // Custom Main Menu (https://github.com/GTNewHorizons/Custom-Main-Menu)
+    get("get", "get", "get", "()Ljava/lang/String;")
     ;
 
     private final String methodName;
