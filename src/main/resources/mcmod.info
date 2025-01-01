@@ -2,7 +2,7 @@
   {
     "modid": "unicodefix",
     "name": "Unicode Fix",
-    "description": "Fixing Unicode Font Bug Issues.",
+    "description": "Fix garbled text on some mods and \"Force unicode font\" Settings which doesn't work on some languages.",
     "logoFile": "",
     "url": "https://github.com/Yukkuritaku/unicode-fix",
     "updateUrl": "https://github.com/Yukkuritaku/unicode-fix/releases",
