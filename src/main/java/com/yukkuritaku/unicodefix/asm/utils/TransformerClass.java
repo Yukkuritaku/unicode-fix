@@ -12,9 +12,13 @@ public enum TransformerClass {
     LanguageManager("net/minecraft/client/resources/LanguageManager", "bbr"),
     GuiLanguage$List("net/minecraft/client/gui/GuiLanguage$List", "bdk"),
 
-    // compatibilities:
+    // mod classes:
+    // FML (Forge)
+    MetadataCollection("cpw/mods/fml/common/MetadataCollection", "cpw/mods/fml/common/MetadataCollection"),
+
     // Custom Main Menu (https://github.com/GTNewHorizons/Custom-Main-Menu)
-    TextResourceLocation("lumien/custommainmenu/lib/texts/TextResourceLocation", "lumien/custommainmenu/lib/texts/TextResourceLocation")
+    TextResourceLocation("lumien/custommainmenu/lib/texts/TextResourceLocation", "lumien/custommainmenu/lib/texts/TextResourceLocation"),
+
     ;
     private final String className;
     private final String seargeClass;

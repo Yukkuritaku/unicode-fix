@@ -44,9 +44,12 @@ public enum TransformerMethod {
     //GuiLanguage$List
     elementClicked("elementClicked", "func_148144_a", "a", "(IZII)V"),
 
-    // compatibilities:
+    // mod methods:
+    // FML (Forge)
+    from("from", "from", "from", "(Ljava/io/InputStream;Ljava/lang/String;)" + TransformerClass.MetadataCollection.getDescriptor()),
+
     // Custom Main Menu (https://github.com/GTNewHorizons/Custom-Main-Menu)
-    get("get", "get", "get", "()Ljava/lang/String;")
+    get("get", "get", "get", "()Ljava/lang/String;"),
     ;
 
     private final String methodName;
