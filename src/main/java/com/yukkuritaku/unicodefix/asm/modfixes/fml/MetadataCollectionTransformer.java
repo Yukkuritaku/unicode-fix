@@ -1,4 +1,4 @@
-package com.yukkuritaku.unicodefix.asm.compat.fml;
+package com.yukkuritaku.unicodefix.asm.modfixes.fml;
 
 import com.yukkuritaku.unicodefix.asm.utils.TransformerClass;
 import com.yukkuritaku.unicodefix.asm.utils.TransformerMethod;

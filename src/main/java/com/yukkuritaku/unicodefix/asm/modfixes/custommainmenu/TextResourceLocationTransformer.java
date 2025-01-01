@@ -1,4 +1,4 @@
-package com.yukkuritaku.unicodefix.asm.compat.custommainmenu;
+package com.yukkuritaku.unicodefix.asm.modfixes.custommainmenu;
 
 import com.yukkuritaku.unicodefix.asm.utils.TransformerClass;
 import com.yukkuritaku.unicodefix.asm.utils.TransformerMethod;
