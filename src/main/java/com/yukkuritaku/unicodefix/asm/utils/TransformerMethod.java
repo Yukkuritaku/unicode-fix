@@ -37,10 +37,13 @@ public enum TransformerMethod {
             "a",
             "(" +TransformerClass.GameSettings$Options.getDescriptor() + "I)V"),
 
-    //FontRenderer
-
     //GuiLanguage$List
     elementClicked("elementClicked", "func_148144_a", "a", "(IZII)V"),
+
+    // mod methods:
+    // FML (Forge)
+    from("from", "from", "from", "(Ljava/io/InputStream;Ljava/lang/String;)" + TransformerClass.MetadataCollection.getDescriptor()),
+
     ;
 
     private final String methodName;

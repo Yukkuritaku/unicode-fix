@@ -8,9 +8,12 @@ public enum TransformerClass {
     Locale("net/minecraft/client/resources/Locale", "bnt"),
     GameSettings("net/minecraft/client/settings/GameSettings", "avh"),
     GameSettings$Options("net/minecraft/client/settings/GameSettings$Options", "avh$a"),
-    FontRenderer("net/minecraft/client/gui/FontRenderer", "avn"),
     LanguageManager("net/minecraft/client/resources/LanguageManager", "bns"),
     GuiLanguage$List("net/minecraft/client/gui/GuiLanguage$List", "axl$a"),
+    // mod classes:
+    // FML (Forge)
+    MetadataCollection("net/minecraftforge/fml/common/MetadataCollection", "net/minecraftforge/fml/common/MetadataCollection"),
+
     ;
     private final String className;
     private final String seargeClass;

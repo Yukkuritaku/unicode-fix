@@ -3,6 +3,7 @@ package com.yukkuritaku.unicodefix.tweaker;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import com.yukkuritaku.unicodefix.asm.*;
+import com.yukkuritaku.unicodefix.asm.modfixes.fml.MetadataCollectionTransformer;
 import com.yukkuritaku.unicodefix.tweaker.transformer.ITransformer;
 import net.minecraft.launchwrapper.IClassTransformer;
 import net.minecraft.launchwrapper.Launch;
@@ -30,6 +31,9 @@ public class UnicodeFixTransformer implements IClassTransformer {
         registerTransformer(new LanguageManagerTransformer());
         registerTransformer(new GuiLanguage$ListTransformer());
         registerTransformer(new ScaledResolutionTransformer());
+        // mod fixes
+        // FML (Forge)
+        registerTransformer(new MetadataCollectionTransformer());
     }
 
     private void registerTransformer(ITransformer transformer){
@@ -73,8 +77,7 @@ public class UnicodeFixTransformer implements IClassTransformer {
         try{
             node.accept(writer);
         }catch (Exception e){
-            LOGGER.error("An exception occurred while transforming {}", transformedName);
-            e.printStackTrace();
+            LOGGER.error("An exception occurred while transforming {}", transformedName, e);
             outputBytecode(transformedName, writer);
             return basicClass;
         }
