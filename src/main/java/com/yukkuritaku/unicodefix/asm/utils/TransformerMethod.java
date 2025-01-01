@@ -36,12 +36,8 @@ public enum TransformerMethod {
             "func_74306_a",
             "a",
             "(" +TransformerClass.GameSettings$Options.getDescriptor() + "I)V"),
-
-    //FontRenderer
-
     //GuiLanguage$List
-    elementClicked("elementClicked", "func_148144_a", "a", "(IZII)V"),
-    ;
+    elementClicked("elementClicked", "func_148144_a", "a", "(IZII)V"),;
 
     private final String methodName;
     private final String descriptor;

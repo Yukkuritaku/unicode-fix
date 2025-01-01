@@ -8,7 +8,6 @@ public enum TransformerClass {
     Locale("net/minecraft/client/resources/Locale", "cfb"),
     GameSettings("net/minecraft/client/settings/GameSettings", "bid"),
     GameSettings$Options("net/minecraft/client/settings/GameSettings$Options", "bid$a"),
-    FontRenderer("net/minecraft/client/gui/FontRenderer", "bip"),
     LanguageManager("net/minecraft/client/resources/LanguageManager", "cfa"),
     GuiLanguage$List("net/minecraft/client/gui/GuiLanguage$List", "blc$a"),
     ;
