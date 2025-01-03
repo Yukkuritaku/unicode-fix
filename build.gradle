@@ -52,6 +52,7 @@ repositories {
 
 dependencies {
     compileOnly 'com.github.GTNewHorizons:Custom-Main-Menu:1.12.0:dev'
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
