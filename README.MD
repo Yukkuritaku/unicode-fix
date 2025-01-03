@@ -1,23 +1,27 @@
+日本語の方のREADMEは[こちら](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/README_JP.MD)
+
 ## Unicode Fix
 
-### 概要
+### Description
 
-1.12.2以下の環境で「Unicodeフォントを使用する」をオフにしていても、
-強制的にUnicodeフォントを使用してしまうバグを直すModです。
+Fixes some mods shown as garbled text and `Force Unicode Font` Settings doesn't work on some languages(e.g. Japanese) on Minecraft 1.12.2 and below.
 
-対応しているバージョン: 1.12.2, 1.8.9, 1.7.10
+Supported version(s): 1.12.2, 1.8.9, 1.7.10
 
-1.13.x以上の環境では修正されているので作っていません。
+This mod doesn't need for 1.13 and higher versions because it is fixed in minecraft code.
 
-### 導入方法
+### Incompatibility mods
 
-1. [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge)を導入する
-2. [ここ](https://github.com/Yukkuritaku/unicode-fix/releases/latest)から自分の使いたいバージョンをダウンロードする
-3. modsフォルダにこのModのJarを入れる
-4. 完了！
+[Bow Infinity Fix](https://www.curseforge.com/minecraft/mc-mods/bow-infinity-fix)
+: Some garbled text shown on ModList gui. This bug can't fix on my mod side, because of CoreMods load timings.
 
----
+### How To Install
 
-### ライセンス、Dependencyなど
-このプロジェクトのv1.0でリリースしているファイルにはSpongePoweredの[Mixin](https://github.com/SpongePowered/Mixin)を依存関係で使用しており、MITライセンスの条件下で配布しています。
-MITライセンスの詳細はこちら: [日本語](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE_JP.txt), [English](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE.txt)
+1. Install [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge)
+2. Download the version you want to use [here](https://github.com/Yukkuritaku/unicode-fix/releases)
+3. Put this jar to `mods` folder
+4. Done!
+
+### License, Dependencies
+The files released in v1.0 of this project use SpongePowered [Mixin](https://github.com/SpongePowered/Mixin) as a dependency and are distributed under the terms of the MIT License.
+More Details on MIT License is here: [Japanese](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE_JP.txt), [English](https://github.com/Yukkuritaku/unicode-fix/blob/1.12.2/LICENSE.txt)
