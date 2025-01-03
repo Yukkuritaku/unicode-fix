@@ -87,7 +87,6 @@ jar {
             "Implementation-Version"     : "${version}",
             "Implementation-Vendor"      : "Yukkuritaku",
             "Implementation-Timestamp"   : new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-
             "FMLCorePlugin"              : "com.yukkuritaku.unicodefix.tweaker.UnicodeFixLoadingPlugin",
             'ForceLoadAsMod'             : true,
             'FMLCorePluginContainsFMLMod': true,

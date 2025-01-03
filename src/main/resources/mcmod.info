@@ -2,13 +2,16 @@
   {
     "modid": "unicodefix",
     "name": "Unicode Fix",
-    "description": "Fix garbled text on some mods and \"Force unicode font\" Settings which doesn't work on some languages.",
+    "description": "Fix garbled text on some mods and \"Force Unicode Font\" Settings which doesn't work on some languages.",
     "logoFile": "",
     "url": "https://github.com/Yukkuritaku/unicode-fix",
     "updateUrl": "https://github.com/Yukkuritaku/unicode-fix/releases",
-    "authorList": ["Yukkuritaku"],
+    "authorList": [
+      "Yukkuritaku"
+    ],
     "version": "${version}",
     "mcversion": "${mcversion}",
     "credits": "Thanks to SpongePowered(Mixin)"
   }
 ]
+
