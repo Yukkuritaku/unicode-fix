@@ -29,3 +29,4 @@ forge*changelog.txt
 mixin-backup
 
 .env
+ignored_readme_assets

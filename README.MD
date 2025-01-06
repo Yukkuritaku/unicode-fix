@@ -10,6 +10,19 @@ Supported version(s): 1.12.2, 1.8.9, 1.7.10
 
 This mod doesn't need for 1.13 and higher versions because it is fixed in minecraft code.
 
+<details><summary>Features </summary>
+
+<details open><summary>Minecraft Fixes</summary>
+
+* Fixes `Force Unicode Font` Settings doesn't work
+
+* Large Gui scale support on `Force Unicode Font: Off`
+
+</details>
+
+
+</details>
+
 ### Incompatibility mods
 
 [Bow Infinity Fix](https://www.curseforge.com/minecraft/mc-mods/bow-infinity-fix)
