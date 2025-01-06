@@ -14,10 +14,7 @@ This mod doesn't need for 1.13 and higher versions because it is fixed in minecr
 
 <details open><summary>Minecraft Fixes</summary>
 
-* Fixes `Force Unicode Font` Settings doesn't work
-
-![Change Force Unicode Font with not unicode fix installed](https://github.com/Yukkuritaku/unicode-fix/raw/refs/heads/1.12.2/readme_assets/unicode_fix_video_1.webm.mp4)
-![Change Force Unicode Font with unicode fix installed](https://github.com/Yukkuritaku/unicode-fix/raw/refs/heads/1.12.2/readme_assets/unicode_fix_video_2.webm.mp4)
+* Fix `Force Unicode Font` Settings doesn't work
 
 * Large Gui scale support on `Force Unicode Font: Off`
 
@@ -25,6 +22,13 @@ This mod doesn't need for 1.13 and higher versions because it is fixed in minecr
 
 </details>
 
+<details><summary>Mod Fixes</summary>
+
+* Fix Mod List texts shown as garbled text on some texts (1.7.10, 1.8.9 only, fixed on 1.12.2)
+  * but it has some incompatibility mods because `MetadataCollection` loading too fast, can't fix on CoreMod Transformers (see [Incompatibility mods](https://github.com/Yukkuritaku/unicode-fix?tab=readme-ov-file#incompatibility-mods)) 
+* Fix [GTNH Custom Main Menu](https://github.com/GTNewHorizons/Custom-Main-Menu) splash text shown as garbled text on some texts (1.7.10 only)
+
+</details>
 
 </details>
 
