@@ -16,7 +16,12 @@ This mod doesn't need for 1.13 and higher versions because it is fixed in minecr
 
 * Fixes `Force Unicode Font` Settings doesn't work
 
+![Change Force Unicode Font with not unicode fix installed](https://github.com/Yukkuritaku/unicode-fix/raw/refs/heads/1.12.2/readme_assets/unicode_fix_video_1.webm.mp4)
+![Change Force Unicode Font with unicode fix installed](https://github.com/Yukkuritaku/unicode-fix/raw/refs/heads/1.12.2/readme_assets/unicode_fix_video_2.webm.mp4)
+
 * Large Gui scale support on `Force Unicode Font: Off`
+
+![Large Gui scale support](https://raw.githubusercontent.com/Yukkuritaku/unicode-fix/refs/heads/1.12.2/readme_assets/unicode_fix_gui_scale_screenshot.png)
 
 </details>
 
